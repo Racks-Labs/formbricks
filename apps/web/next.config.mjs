@@ -57,6 +57,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "images.unsplash.com",
       },
+      {
+        protocol: "https",
+        hostname: "noguesabogados.s3.eu-west-3.amazonaws.com",
+      }
     ],
   },
   async rewrites() {

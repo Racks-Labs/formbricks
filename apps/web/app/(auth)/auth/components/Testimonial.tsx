@@ -1,7 +1,8 @@
-import CalComLogo from "@/images/cal-logo-light.svg";
-import Peer from "@/images/peer.webp";
+// import CalComLogo from "@/images/cal-logo-light.svg";
+// import Peer from "@/images/peer.webp";
 import { CheckCircle2Icon } from "lucide-react";
-import Image from "next/image";
+
+// import Image from "next/image";
 
 export const Testimonial = () => {
   return (
