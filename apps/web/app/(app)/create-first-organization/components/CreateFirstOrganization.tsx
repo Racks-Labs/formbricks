@@ -46,7 +46,7 @@ export const CreateFirstOrganization = () => {
     <div className="flex h-full flex-col">
       <div className="flex w-full items-center justify-start px-8 py-4">
         <Image className="w-6" src={FormbricksLogo} alt="Formbricks Logo" />
-        <p className="text ml-4 text-2xl font-bold">Formbricks</p>
+        <p className="text ml-4 text-2xl font-bold">Nogues Abogados</p>
       </div>
       <div className="flex h-[calc(100%-12rem)] items-center justify-center border-red-800">
         <form onSubmit={handleSubmit(onCreateOrganization)}>
