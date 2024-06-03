@@ -2,7 +2,7 @@
 
 import { NavigationLink } from "@/app/(app)/environments/[environmentId]/components/NavigationLink";
 import { formbricksLogout } from "@/app/lib/formbricks";
-import FBLogo from "@/images/formbricks-wordmark.svg";
+// import FBLogo from "@/images/formbricks-wordmark.svg";
 import {
   ArrowUpRightIcon,
   BlocksIcon,
