@@ -20,7 +20,12 @@ export const FileUploadResponse = ({ selected }: FileUploadResponseProps) => {
 
             return (
               <div className="relative m-2 ml-0 rounded-lg bg-slate-100">
-                <a href={fileUrl as string} key={index} download={fileName}>
+                <a
+                  href={fileUrl as string}
+                  key={index}
+                  target="_blank"
+                  // download={fileName}
+                >
                   <div className="absolute right-0 top-0 m-2">
                     <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-slate-50 hover:bg-white">
                       <svg

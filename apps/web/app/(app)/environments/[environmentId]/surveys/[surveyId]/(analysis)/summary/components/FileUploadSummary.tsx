@@ -85,7 +85,7 @@ export const FileUploadSummary = ({
                           <a
                             href={fileUrl as string}
                             key={index}
-                            download={fileName}
+                            // download={fileName}
                             target="_blank"
                             rel="noopener noreferrer">
                             <div className="absolute right-0 top-0 m-2">
