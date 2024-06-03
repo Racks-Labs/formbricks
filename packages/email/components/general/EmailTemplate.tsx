@@ -1,4 +1,5 @@
-import { Body, Column, Container, Html, Img, Link, Row, Section, Tailwind } from "@react-email/components";
+import { Body, Container, Html, Img, Link, Section, Tailwind } from "@react-email/components";
+// import { Body, Column, Container, Html, Img, Link, Row, Section, Tailwind } from "@react-email/components";
 import React, { Fragment } from "react";
 
 interface EmailTemplateProps {
