@@ -16,7 +16,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Login",
-  description: "Open-source Experience Management. Free & open source.",
+  description: "Nogués Abogados, Expertos en derecho bancario",
 };
 
 const Page = () => {
