@@ -2,7 +2,7 @@
 
 import { NavigationLink } from "@/app/(app)/environments/[environmentId]/components/NavigationLink";
 import { formbricksLogout } from "@/app/lib/formbricks";
-import FBLogo from "@/images/formbricks-wordmark.svg";
+// import FBLogo from "@/images/formbricks-wordmark.svg";
 import {
   ArrowUpRightIcon,
   BlocksIcon,
@@ -227,7 +227,13 @@ export const MainNavigation = ({
                     "flex items-center justify-center transition-opacity duration-100",
                     isTextVisible ? "opacity-0" : "opacity-100"
                   )}>
-                  <Image src={FBLogo} width={160} height={30} alt="Formbricks Logo" />
+                  {/* <Image src={FBLogo} width={160} height={30} alt="Formbricks Logo" /> */}
+                  <Image
+                    src={"https://mrcrypto-sources.s3.eu-central-1.amazonaws.com/custom/noguesabogados.png"}
+                    width={160}
+                    height={30}
+                    alt="Nogues Abogados Logo"
+                  />
                 </Link>
               )}
               <Button
