@@ -4,7 +4,7 @@ import React from "react";
 export const EmailFooter = () => {
   return (
     <Text>
-      Have a great day!<br></br> The Formbricks Team!
+      ¡Que tengas un gran día!<br></br> ¡El equipo de NOGUÉS ABOGADOS!
     </Text>
   );
 };

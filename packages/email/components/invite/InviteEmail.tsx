@@ -13,10 +13,10 @@ interface InviteEmailProps {
 export const InviteEmail = ({ inviteeName, inviterName, verifyLink }: InviteEmailProps) => {
   return (
     <Container>
-      <Text>Hey {inviteeName},</Text>
+      <Text>Hola {inviteeName},</Text>
       <Text>
-        Your colleague {inviterName} invited you to join them at Formbricks. To accept the invitation, please
-        click the link below:
+        Tu Compañero {inviterName} te invitó a unirte a ellos. Para aceptar la invitación, por favor haga
+        click en el enlace a continuación:
       </Text>
       <EmailButton label="Join organization" href={verifyLink} />
       <EmailFooter />
