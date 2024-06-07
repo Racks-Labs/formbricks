@@ -12,7 +12,7 @@ export const NotificationFooter = ({ environmentId }: NotificatonFooterProps) =>
     <Tailwind>
       <Container className="w-full">
         <Text className="mb-0 pt-4 font-medium">All the best,</Text>
-        <Text className="mt-0">The Formbricks Team 🤍</Text>
+        <Text className="mt-0">The NOGUÉS ABOGADOS Team 🤍</Text>
         <Container
           className="mt-0 w-full rounded-md bg-slate-100 px-4 text-center text-xs leading-5"
           style={{ fontStyle: "italic" }}>

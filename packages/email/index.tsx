@@ -80,7 +80,7 @@ export const sendEmail = async (emailData: sendEmailData) => {
         debug: DEBUG,
       });
       const emailDefaults = {
-        from: `Formbricks <${MAIL_FROM || "noreply@formbricks.com"}>`,
+        from: `NoguesAbogados <${MAIL_FROM || "noreply@noguesabogados.com"}>`,
       };
       await transporter.sendMail({ ...emailDefaults, ...emailData });
     } else {
@@ -101,7 +101,7 @@ export const sendVerificationEmail = async (user: TEmailUser) => {
   )}`;
   await sendEmail({
     to: user.email,
-    subject: "Please verify your email to use Formbricks",
+    subject: "Por favor verifique su correo electrónico",
     html: render(EmailTemplate({ content: VerificationEmail({ verificationRequestLink, verifyLink }) })),
   });
 };
@@ -113,7 +113,7 @@ export const sendForgotPasswordEmail = async (user: TEmailUser) => {
   const verifyLink = `${WEBAPP_URL}/auth/forgot-password/reset?token=${encodeURIComponent(token)}`;
   await sendEmail({
     to: user.email,
-    subject: "Reset your Formbricks password",
+    subject: "Restablece tu contraseña",
     html: render(EmailTemplate({ content: ForgotPasswordEmail({ verifyLink }) })),
   });
 };
@@ -121,7 +121,7 @@ export const sendForgotPasswordEmail = async (user: TEmailUser) => {
 export const sendPasswordResetNotifyEmail = async (user: TEmailUser) => {
   await sendEmail({
     to: user.email,
-    subject: "Your Formbricks password has been changed",
+    subject: "Tu contraseña ha sido cambiada",
     html: render(EmailTemplate({ content: PasswordResetNotifyEmail() })),
   });
 };
@@ -143,7 +143,7 @@ export const sendInviteMemberEmail = async (
   if (isOnboardingInvite && inviteMessage) {
     await sendEmail({
       to: email,
-      subject: `${inviterName} needs a hand setting up Formbricks.  Can you help out?`,
+      subject: `${inviterName} Necesita ayuda para configurar.  ¿Puedes ayudar?`,
       html: render(
         EmailTemplate({ content: OnboardingInviteEmail({ verifyLink, inviteMessage, inviterName }) })
       ),
@@ -151,7 +151,7 @@ export const sendInviteMemberEmail = async (
   } else {
     await sendEmail({
       to: email,
-      subject: `You're invited to collaborate on Formbricks!`,
+      subject: `¡Estás invitada a colaborar!`,
       html: render(EmailTemplate({ content: InviteEmail({ inviteeName, inviterName, verifyLink }) })),
     });
   }
@@ -160,7 +160,7 @@ export const sendInviteMemberEmail = async (
 export const sendInviteAcceptedEmail = async (inviterName: string, inviteeName: string, email: string) => {
   await sendEmail({
     to: email,
-    subject: `You've got a new organization member!`,
+    subject: `¡Tienes una nueva miembro de la organización!`,
     html: render(EmailTemplate({ content: InviteAcceptedEmail({ inviteeName, inviterName }) })),
   });
 };
@@ -178,8 +178,8 @@ export const sendResponseFinishedEmail = async (
   await sendEmail({
     to: email,
     subject: personEmail
-      ? `${personEmail} just completed your ${survey.name} survey ✅`
-      : `A response for ${survey.name} was completed ✅`,
+      ? `${personEmail} Acabas de completar tu ${survey.name} encuesta ✅`
+      : `una respuesta para ${survey.name} Se completó ✅`,
     replyTo: personEmail?.toString() || MAIL_FROM,
     html: render(
       EmailTemplate({
@@ -223,7 +223,7 @@ export const sendLinkSurveyToVerifiedEmail = async (data: LinkSurveyEmailData) =
   };
   await sendEmail({
     to: data.email,
-    subject: "Your Formbricks Survey",
+    subject: "Su encuesta",
     html: render(EmailTemplate({ content: LinkSurveyEmail({ surveyData, getSurveyLink }) })),
   });
 };
